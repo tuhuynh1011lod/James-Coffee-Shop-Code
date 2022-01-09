@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!--Home Page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="James's Coffee Shop">
+    <link rel="stylesheet" href="stylesheet.css">  
+    <title>Home page</title>
+</head> 
+<body>
+  <header>
+    <div>
+        <nav class="header">
+            <a href="index.html"><div class="brand"></div></a>
+            <ul>
+                <li><a href="menu.html"><b>Menu</b></a></li>
+                <li><a href="Abus.html"><b>About us</b></a></li>
+                <li><a href="Coffeepro.html"><b>About Coffee</b></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bigimg" id="first_bigimg-home">
+      <h1 class="fontyeseva">Welcome to<br>James's Coffee Shop</h1>
+      <p class="fontasap"> Here we provide great coffee</p>
+      <div id="home_link_aboutus">
+        <button type="button" class="fontasap" >
+          <a href="Abus.html">Read more about us</a>
+        </button>
+      </div>
+    </div>
+  </header>
+  <article>
+    <div id="home_container_1" class="flex-container-home">
+      <div id="content-home1" class="home_child">
+        <div class="all-content">
+          <h1 id="abus" class="fontyeseva">WE PROVIDE<br>CONSCIOUSNESS</h1>
+          <div class="nothing"></div>
+          <p class="fontasap">At JCS, we make good coffee for your brain and provide you a peaceful environment to study and work.</p>
+          <div class="home-link fontasap"><a href="Abus.html">MORE ABOUT US</a></div>
+        </div>
+      </div>
+      <div class="home_blank"></div>
+      <div id="img1-home" class="smallimg home_child"></div>
+      
+    </div>
+    <div id="home_container_2" class="flex-container-home">
+      <div id="img2-home" class="smallimg home_child"></div>
+      <div id="content-home2" class="home_child">
+        <div class="all-content">
+          <h1 id="aboutcf" class="fontyeseva">Coffee Quality</h1>
+          <div class="nothing not2"></div>
+          <p class="fontasap">Our coffee beans are selected carefully from the Vietnamese qualified farm.</p>
+          <div class="home-link fontasap home-link2"><a href="Coffeepro.html">MORE ABOUT OUR COFFEE</a></div>
+          <div class="home-link fontasap home-link2"><a href="menu.html ">OUR MENU</a></div>
+        </div>
+      </div>
+      <div id="img3-home" class="smallimg home_child"></div>
+    </div>
+  </article>
+  <aside>
+    <div class="quote">
+      <h1>Serving Greatness <br>to Everyone</h1>
+      <p>FROM JAMES'S COFFEE SHOP TEAM</p>
+  </div>
+  </aside>
+  <footer>
+    <div class="footer_info">
+        <div class="fontasap contact"><a href="404.html">Contact</a></div>
+        <div class="fontasap address"><a href="404.html">Find our shop</a></div>
+        <div class="fontasap feedback"><a href="404.html">Feedback</a></div>
+    </div>
+    <p>@Establish by JCS team on 2021</p>
+  </footer>
+  <script>//check whether browser support service workers
+    if ('serviceWorker' in navigator) {    
+      //wait until page loaded to avoid delaying rendering    
+      window.addEventListener('load', function() {        
+        //register service worker        
+        navigator.serviceWorker.register('/sw.js').then(            
+          function(registration) {
+            console.log('Service worker registration successful',registration);            
+          },             
+          function(err) {           
+            console.log('Service worker registration failed', err);        
+          }
+        );    
+      });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!--About Coffee Page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="James's Coffee Shop">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>About Coffee page</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav class="header">
+                    <a href="index.html"><div class="brand"></div></a>
+                    <ul>
+                        <li><a href="menu.html"><b>Menu</b></a></li>
+                        <li><a href="Abus.html"><b>About us</b></a></li>
+                        <li><a href="Coffeepro.html"><b>About Coffee</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article class="grid-container-coffee">
+            <div id="coffee_selecting">
+                <div class="all-content item">
+                    <h1 class="fontyeseva">Selecting</h1>
+                    <div class="nothing not2"></div>
+                    <p class="fontasap">We make a standard about choosing 
+                        which farm to grow our coffee cherries 
+                        and also in the choosing bean process.
+                        This process is not only about our standard but
+                        the wish of us to serve the greatest coffee to our customer.
+                    </p>
+                </div>
+            </div>
+            <div id="img5-coffee" ></div>
+            <div id="img6-coffee" ></div>
+            <div id="coffee_roasting">
+                <div class="all-content item">
+                    <h1 class="fontyeseva">Roasting</h1>
+                    <div class="nothing"></div>
+                    <p class="fontasap">Roasting causes chemical changes to take 
+                        place as the beans are rapidly brought to very high temperatures. 
+                        When they reach the peak of perfection, 
+                        they are quickly cooled to stop the process.
+                    </p><!--Association, N., Coffee, A. and Guide, C., 2021. Coffee Roasts Guide. [online] Ncausa.org. Available at: <https://www.ncausa.org/about-coffee/coffee-roasts-guide> [Accessed 16 June 2021].-->
+                </div>
+            </div>
+            <div id="coffee_brewing">
+                <div class="all-content item">
+                    <h1 class="fontyeseva">Brewing</h1>
+                    <div class="nothing not2"></div>
+                    <p class="fontasap">Brewing coffee is the process of extracting 
+                        the soluble material in roasted and ground coffee. 
+                        As this coffee is brewed in hot water, 
+                        hundreds of unique compounds are extracted 
+                        from the ground beans – creating brewed coffee.
+                    </p><!--Kornman, C., 2021. Understanding Coffee Extraction & Other Key Brewing Concepts. [online] Perfect Daily Grind. Available at: <https://perfectdailygrind.com/2017/06/understanding-coffee-extraction-other-key-brewing-concepts/> [Accessed 16 June 2021].-->
+                </div>
+            </div>
+            <div id="img7-coffee"></div>
+            <div id="img8-coffee"></div>
+            <div id="coffee_drinking">
+                <div class="all-content item">
+                    <h1 class="fontyeseva">Drinking</h1>
+                    <div class="nothing"></div>
+                    <p class="fontasap">Drinking in the day’s first sip of coffee is like 
+                        paradise massaging the taste buds. 
+                        It is, as one coffee-in-a-can company 
+                        figured out long ago, the best part of waking up. 
+                        For a single moment at your favorite coffee shop.
+                        The day’s worries momentarily melting away, 
+                        letting you breathe in the serenity of sunshine just as the caffeine smacks your brain.
+                    </p><!--Atlas Coffee Club. 2021. How to Make the Perfect Cup of Coffee. [online] Available at: <https://atlascoffeeclub.com/pages/how-to-make-the-perfect-cup-of-coffee> [Accessed 16 June 2021].-->
+                </div>
+            </div>
+        </article>
+        <aside>
+            <div class="quote">
+              <h1>Serving Greatness <br>to Everyone</h1>
+              <p>FROM JAMES'S COFFEE SHOP TEAM</p>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer_info">
+                <div class="fontasap contact"><a href="404.html">Contact</a></div>
+                <div class="fontasap address"><a href="404.html">Find our shop</a></div>
+                <div class="fontasap feedback"><a href="404.html">Feedback</a></div>
+            </div>
+            <p>@Establish by JCS team on 2021</p>
+        </footer>
+        <script>//check whether browser support service workers
+            if ('serviceWorker' in navigator) {    
+              //wait until page loaded to avoid delaying rendering    
+              window.addEventListener('load', function() {        
+                //register service worker        
+                navigator.serviceWorker.register('/sw.js').then(            
+                  function(registration) {
+                    console.log('Service worker registration successful',registration);            
+                  },             
+                  function(err) {           
+                    console.log('Service worker registration failed', err);        
+                  }
+                );    
+              });
+            }
+        </script>
+    </body>
+</html>

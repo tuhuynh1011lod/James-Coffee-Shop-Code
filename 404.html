@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!--Error Page-->
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="James's Coffee Shop">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>404 page</title>
+  </head>
+  <body>
+    <header>
+      <div>
+          <nav class="header">
+            <a href="index.html"><div class="brand"></div></a>              <ul>
+                  <li><a href="menu.html"><b>Menu</b></a></li>
+                  <li><a href="Abus.html"><b>About us</b></a></li>
+                  <li><a href="Coffeepro.html"><b>About Coffee</b></a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+    <article id="go-wrong">
+      <h1 class="fontyeseva">The page is in development process</h1>
+      <p class="fontasap">Sorry for this inconvinient.</p>
+      <a href="index.html"> [Click here to get back to JCS's Home Page.] </a>
+    </article>
+    <script>
+      if ('serviceWorker' in navigator) {    
+        window.addEventListener('load', function() {                
+          navigator.serviceWorker.register('/sw.js').then(            
+            function(registrasion) {
+              console.log('Service worker registration successful', registrasion);            
+            })      
+          .catch(function(err) {           
+              console.log('Service worker registration failed', err);        
+            })    
+        });
+      }
+    </script>
+  </body>
+
+</html>

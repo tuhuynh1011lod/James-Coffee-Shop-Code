@@ -1,0 +1,172 @@
+<!DOCTYPE html> <!--Menu Page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="James's Coffee Shop">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="menu.css">
+        <title>Menu page</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav class="header">
+                    <a href="index.html"><div class="brand"></div></a>
+                    <ul>
+                        <li><a href="menu.html"><b>Menu</b></a></li>
+                        <li><a href="Abus.html"><b>About us</b></a></li>
+                        <li><a href="Coffeepro.html"><b>About Coffee</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bigimg"  id="second-bigimg">
+                <h1 class="fontyeseva">Serving Menu</h1>
+                <p class="fontasap">Hope you enjoy the meal that we provided</p>
+            </div>
+        </header>
+        <div class="flex-container-menu">
+            <nav id="menu_fnb">
+                <a class="flex_item_fnb" href="#coffees">
+                    <div  id="fnb_illustration_1" class="fnb_illustration"></div>
+                    <p class="menu_type">Coffees</p>
+                </a>
+                <a class="flex_item_fnb" href="#teas">
+                    <div id="fnb_illustration_2" class="fnb_illustration"></div>
+                    <p class="menu_type">Teas</p>
+                </a>
+                <a class="flex_item_fnb" href="#smoothies">
+                    <div id="fnb_illustration_3" class="fnb_illustration"></div>
+                    <p class="menu_type">Smoothies</p>
+                </a>
+                <a class="flex_item_fnb" href="#bakery">
+                    <div id="fnb_illustration_4" class="fnb_illustration"></div>
+                    <p class="menu_type">Bakery</p>
+                </a>
+                
+                <a class="flex_item_fnb" href="#cookies">
+                    <div id="fnb_illustration_5" class="fnb_illustration"></div>
+                    <p class="menu_type">Cookies</p>
+                </a>           
+            </nav>
+            <div id="menu_detail">
+                <div class="flex_menu_type" id="coffees">
+                    <h2 class="decor">Coffees</h2>
+                    <div>
+                        <ul class="itemlist"><b>
+                            <li>Expresso</li>
+                            <li>Cappucchino</li>
+                            <li>Cold Brew</li>
+                            <li>Caramel Macchiato</li>
+                            <li>Vietnamese Coffee</li></b>
+                        </ul>
+                        <ul class="pricelist">
+                            <li>40</li>
+                            <li>60</li>
+                            <li>60</li>
+                            <li>75</li>
+                            <li>65</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex_menu_type" id="teas">
+                    <h2 class="decor">Teas</h2>
+                    <div>
+                        <ul class="itemlist"><b>
+                            <li>Grey tea</li>
+                            <li>Milk tea</li>
+                            <li>Oolong tea</li>
+                            <li>Matcha</li>
+                            <li>Peach tea</li></b>
+                        </ul>
+                        <ul class="pricelist">
+                            <li>40</li>
+                            <li>35</li>
+                            <li>40</li>
+                            <li>45</li>
+                            <li>45</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex_menu_type" id="smoothies">
+                    <h2 class="decor">Smoothies</h2>
+                    <div>
+                        <ul class="itemlist"><b>
+                            <li>Banana</li>
+                            <li>Watermelon</li>
+                            <li>Mango</li>
+                            <li>Avocado</li></b>
+                        </ul>
+                        <ul class="pricelist">
+                            <li>40</li>
+                            <li>40</li>
+                            <li>40</li>
+                            <li>40</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex_menu_type" id="bakery">
+                    <h2 class="decor">Bakery</h2>
+                    <div>
+                        <ul class="itemlist"><b>
+                            <li>Tiramisu</li>
+                            <li>Panna Cotta</li>
+                            <li>Red Velvet Slice</li>
+                            <li>Passion Fruit Cheesecake</li></b>
+                        </ul>
+                        <ul class="pricelist">
+                            <li>30</li>
+                            <li>30</li>
+                            <li>35</li>
+                            <li>35</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex_menu_type" id="cookies">
+                    <h2 class="decor">Cookies</h2>
+                    <div>
+                        <ul class="itemlist"><b>
+                            <li>Original cookie</li>
+                            <li>Green cookie</li></b>
+                        </ul>
+                        <ul class="pricelist">
+                            <li>4</li>
+                            <li>7</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="booking-table"><a href="table.html"><button type="button">Reserving table here</button></a></div>
+            </div>
+        </div>
+        <aside>
+            <div class="quote">
+              <h1>Serving Greatness <br>to Everyone</h1>
+              <p>FROM JAMES'S COFFEE SHOP TEAM</p>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer_info">
+                <div class="fontasap contact"><a href="404.html">Contact</a></div>
+                <div class="fontasap address"><a href="404.html">Find our shop</a></div>
+                <div class="fontasap feedback"><a href="404.html">Feedback</a></div>
+            </div>
+            <p>@Establish by JCS team on 2021</p>
+        </footer>
+        <script>//check whether browser support service workers
+            if ('serviceWorker' in navigator) {    
+              //wait until page loaded to avoid delaying rendering    
+              window.addEventListener('load', function() {        
+                //register service worker        
+                navigator.serviceWorker.register('/sw.js').then(            
+                  function(registration) {
+                    console.log('Service worker registration successful',registration);            
+                  },             
+                  function(err) {           
+                    console.log('Service worker registration failed', err);        
+                  }
+                );    
+              });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--About us Page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="James's Coffee Shop">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>About us page</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav class="header">
+                    <a href="index.html"><div class="brand"></div></a>                    
+                    <ul>
+                        <li><a href="menu.html"><b>Menu</b></a></li>
+                        <li><a href="Abus.html"><b>About us</b></a></li>
+                        <li><a href="Coffeepro.html"><b>About Coffee</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <article class="grid-container-abus">
+            <div id="Aboutus_intro">
+                <div id="Aboutus_paragraph" class="item">
+                    <p>Dear Coffee lovers,</p>
+                    <p>We are JCS's Team that stands behind the great coffee cups 
+                        that you usually buy. With a love of coffee and aware of 
+                        a lack of cafes that provides an area 
+                        and vibe for studying and working, we were founded in June 2021.
+                    </p>
+                    <p>We hope that JCS can be a place that 
+                        brings people around to gathering 
+                        for discussion of knowledge or 
+                        just having a great time enjoying a cup of pleaser here.
+                    </p>
+                    <p>From,</p>
+                    <div id="Aboutus_signature">James & JCS's Team</div>
+                </div>
+             </div>
+            <div id="img9-Aboutus"></div>
+        </article>
+        <aside>
+            <div class="quote">
+              <h1>Serving Greatness <br>to Everyone</h1>
+              <p>FROM JAMES'S COFFEE SHOP TEAM</p>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer_info">
+                <div class="fontasap contact"><a href="404.html">Contact</a></div>
+                <div class="fontasap address"><a href="404.html">Find our shop</a></div>
+                <div class="fontasap feedback"><a href="404.html">Feedback</a></div>
+            </div>
+            <p>@Establish by JCS team on 2021</p>
+        </footer>
+        <script>//check whether browser support service workers
+            if ('serviceWorker' in navigator) {    
+              //wait until page loaded to avoid delaying rendering    
+              window.addEventListener('load', function() {        
+                //register service worker        
+                navigator.serviceWorker.register('/sw.js').then(            
+                  function(registration) {
+                    console.log('Service worker registration successful',registration);            
+                  },             
+                  function(err) {           
+                    console.log('Service worker registration failed', err);        
+                  }
+                );    
+              });
+            }
+        </script>
+    </body>
+</html>

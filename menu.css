@@ -1,0 +1,149 @@
+/*Menu Page*/
+.flex-container-menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bigimg h1{color:#fff;margin:10px}
+.bigimg p{color:#fff}
+#second-bigimg{
+    background: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)),url('Image/Menu_bigimg.jpeg');/*Bogarova, X., 2017. It was a sunny day, so fresh and warm, the best day for a picnic. [image] Available at: <https://unsplash.com/photos/Gvvio5kpvHk> [Accessed 25 June 2021].*/
+    background-size: cover;
+    background-position: center;
+}
+#menu_fnb {
+    flex: 0 0 20%;
+    margin-left:60px;
+    margin-top:60px;
+    margin-right:15px;
+}
+#menu_fnb p{color:#a77c54}
+.flex_item_fnb{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.fnb_illustration{
+    margin-right:5px;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background-size:120%;
+    background-position: center;
+}
+a>p{
+    transition:0.3s;
+}
+a >p:hover{font-size:23px;color:#a77c54}
+
+#fnb_illustration_1{
+    background-image: url('Image/coffee_cup.jpeg');/*DiBernardo, C., 2020. [image] Available at: <https://unsplash.com/photos/MXXTl3Cj2Og> [Accessed 25 June 2021].*/
+}
+#fnb_illustration_2{
+    background-image: url('Image/Tea_cup.jpeg');/*akyurt, e., 2020. a cup of tea. [image] Available at: <https://unsplash.com/photos/5JYWjLYl6CU> [Accessed 25 June 2021].*/
+}
+#fnb_illustration_3{
+    background-image: url('Image/smoothie.jpeg');/*Mils, A., 2018. Melon Juice. [image] Available at: <https://unsplash.com/photos/pPhN8HFzkDE> [Accessed 25 June 2021].*/
+}
+#fnb_illustration_4{
+    background-image: url('Image/bakery.jpeg');/*Thomas, M., 2020. Junior Mints® cupcake with a box of candy and fresh mint leaves in the background.. [image] Available at: <https://unsplash.com/photos/g95SDyV77LA> [Accessed 25 June 2021].*/
+    background-size: 150%;
+}
+
+#fnb_illustration_5{
+    background-image: url('Image/cookies.jpeg');/*mirhashemian, a., 2020. [image] Available at: <https://unsplash.com/photos/8rgwgZ76oFc> [Accessed 25 June 2021].*/
+}
+.menu_type{
+    font-family:'Lato', sans-serif;
+    font-size:20px;
+}
+
+.menu_type li{
+    margin-bottom: 5px;
+    padding-left:10px;
+}
+#menu_detail{
+    flex: 5 3 70%;
+    margin-top:60px;
+    margin-right:40px;
+}
+.flex_menu_type{
+    display:flex;
+    flex-direction: column;
+    
+}
+.decor{
+    border-bottom:3px solid #544434;
+    font-family: 'Barlow Condensed',sans-serif;
+
+}
+.itemlist{
+    font-family: 'Abel', sans-serif;  
+    margin:10px;
+    padding-left:0.3%;
+    padding-right:0px;
+    float:left;
+}
+.itemlist li{
+    padding-bottom:10px;
+    font-size:15px;
+}
+.pricelist{
+    font-family: monospace;
+    margin:10px;
+    float: right;
+    font-size:15px;
+}
+.pricelist li{
+    text-align:left;
+    padding-bottom: 10px;
+}    
+#booking-table{
+    margin-top:30px;
+}
+#booking-table button{
+    padding: 15px;
+    background-color: #a77c54;
+    position:relative;
+    border:unset;
+    border-radius: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+    color:#fff;
+    font-size:15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+#booking-table button:hover{
+    background-color:#d1d4d0;
+    color:#a77c54;
+}
+@media screen and (max-width:800px) {
+    .flex_item_fnb{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #menu_fnb{
+        margin:0;
+        margin-top:25px;
+        flex: 0 0 100%;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .flex-container-menu{
+        margin-left:30px;
+        margin-right:30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #menu_detail{
+        margin:0;
+
+    }
+}

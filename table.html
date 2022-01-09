@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!--Booking page-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="James's Coffee Shop">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Booking</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav class="header">
+                    <a href="index.html"><div class="brand"></div></a>                    
+                    <ul>
+                        <li><a href="menu.html"><b>Menu</b></a></li>
+                        <li><a href="Abus.html"><b>About us</b></a></li>
+                        <li><a href="Coffeepro.html"><b>About Coffee</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bigimg" id="thirdimg">
+                <h1 class="fontyeseva">Reservation</h1>
+            </div>
+        </header>
+        <article class="flex_reservation">
+            <div id="cafe-map"></div>
+            <div class=form_container>
+                <form id="form" method="POST" action="/">
+                    <h1 class="fontyeseva">Reservation</h1>
+                    <p class="fontasap">Please fill the form so that we can arrange your visiting</p>
+                    <hr>
+                    <label class="fontasap form-size" for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" autocomplete="off" required>
+                    <label class="fontasap form-size" for="phoneNum">Phone Number</label>
+                    <input type="tel" name="phoneNum" id="phoneNum" autocomplete="off" required>
+                    <label class="fontasap form-size" for="email_address">Email</label>
+                    <input type="email" name="address" id="email_address" autocomplete="off" required>
+                    <label class="fontasap form-size" for="tableNum">Table Number</label>
+                    <select name="table_num" id="table_num" required>
+                        <optgroup lable="Medium-size Table">
+                            <option value="J1" selected>J1</option>
+                            <option value="J1">J2</option>
+                            <option value="J1">J3</option>
+                            <option value="J1">J6</option>
+                            <option value="J1">J7</option>
+                            <option value="J1">J8</option>
+                        </optgroup>
+                        <optgroup label="Small-size Table">
+                            <option value="J1">J4</option>
+                            <option value="J1">J5</option>
+                            <option value="J1">J9</option>
+                            <option value="J1">J10</option>
+                        </optgroup>
+                        <optgroup label="Long Table">
+                            <option value="J1">J11</option>
+                            <option value="J1">J13</option>
+                            <option value="J1">J14</option>
+                        </optgroup>
+                        <optgroup label="Meeting House">
+                            <option value="J1">J12</option>
+                            <option value="J1">J15</option>
+                        </optgroup>
+                    </select>
+                    <button type="button" onclick="alert('You have booked your table successfully')">Submit</button>
+                </form>
+                
+            </div>
+        </article>
+        <aside>
+            <div class="quote">
+              <h1>Serving Greatness <br>to Everyone</h1>
+              <p>FROM JAMES'S COFFEE SHOP TEAM</p>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer_info">
+                <div class="fontasap contact"><a href="404.html">Contact</a></div>
+                <div class="fontasap address"><a href="404.html">Find our shop</a></div>
+                <div class="fontasap feedback"><a href="404.html">Feedback</a></div>
+            </div>
+            <p>@Establish by JCS team on 2021</p>
+        </footer>
+        <script>//check whether browser support service workers
+            if ('serviceWorker' in navigator) {    
+              //wait until page loaded to avoid delaying rendering    
+              window.addEventListener('load', function() {        
+                //register service worker        
+                navigator.serviceWorker.register('/sw.js').then(            
+                  function(registration) {
+                    console.log('Service worker registration successful',registration);            
+                  },             
+                  function(err) {           
+                    console.log('Service worker registration failed', err);        
+                  }
+                );    
+              });
+            }
+        </script>
+    </body>
+</html>

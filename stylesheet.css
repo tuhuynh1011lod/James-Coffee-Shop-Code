@@ -1,0 +1,583 @@
+body {
+    margin: 0;
+    padding:0;
+}
+* {
+    box-sizing: border-box;
+}
+h1{
+    margin:5px;
+}
+/*Home Page & all page*/
+header{
+    height:fit-content;
+    width:100%;
+}    
+.header{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items:center ;
+    background-color:#d1d4d0;
+    border-bottom: 15px solid  #a77c54  ;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+.header ul li {
+    margin-top: 60px;
+    position: relative;
+    display:inline-block;
+    text-align:left;
+    margin-right: 20px;
+    padding-bottom:20px;
+    font-size:23px;
+    font-family: 'Abel', sans-serif;  
+}
+a {
+    text-decoration:none;
+    color:#9b6b43;
+}
+
+ul li a :hover { color: #fff;}
+.header ul li a::after{
+    content: '';
+    height:3px;
+    width:0;
+    left:0;
+    background-color: #a77c54;
+    position: absolute;
+    border-radius: 40px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.header ul li a:hover::after{ width:100%; }
+.brand{
+    width:200px;
+    height:160px;
+    margin:20px;
+    background-image:url('Image/Brand.gif');
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.bigimg{
+    display:flex;
+    flex-direction: column;
+    height: 600px;
+    background-repeat: no-repeat;
+    width:100%;
+    justify-content: center;
+    text-align: center;
+}
+#first_bigimg-home {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("Image/firstimg.jpeg");/*Dumlao, N., 2017. latte deconstructed bar nine. [image] Available at: <https://unsplash.com/photos/KixfBEdyp64> [Accessed 25 June 2021].*/
+    background-position: center; 
+    
+}
+.bigimg h1, .bigimg p{
+    margin-bottom: 3px;
+    color: #f7f4f2;
+}
+#home_link_aboutus{
+    align-self:center;
+    width:fit-content;
+    margin:20px;
+}
+#home_link_aboutus button{
+    width:100%;
+    padding:15px;
+    border-radius:25px;
+    font-weight: bold;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #d1d4d0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#home_link_aboutus button a {color:#fff;}
+#home_link_aboutus button:hover{
+    background-color: #a77c54;
+}
+.fontyeseva {
+    font-size: 50px;
+    font-family: 'Barlow Condensed',sans-serif;
+}
+
+.fontasap {
+    font-family: 'Abel', sans-serif;  
+    font-size:24px;
+}
+article{ margin:0px 0 30px 0;}
+.flex-container-home{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.home_child{
+    height:500px;
+    min-width: 200px;
+}
+#home_container_1{
+    background-color:#a77c54;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#content-home1{
+    width:30%;
+    min-width: 350px;
+    color:#f7f4f2
+}
+.all-content{
+    margin: 50px 30px 10px 30px;
+}
+
+#abus{
+    font-size:30px;
+}
+.all-content h1{
+    padding:0px;
+    font-size:30px;
+    font-weight: bold;
+}
+.nothing{
+    background-color: #F7F4F2;
+    margin: 0px 90px 20px 0px;
+    padding: 2px;
+    border-radius:20px;
+}
+.all-content p{
+    padding:0px;
+    font-size:25px;
+}
+
+.home-link{ margin: 20px 0; }
+.home-link a{
+    position: relative;
+    color:#f7f4f2;
+    font-size:15px;
+    font-weight: bold;
+    border:2px solid #f7f4f2;
+    background-color: transparent;
+    padding:10px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.home-link a:hover{
+    background-color: #d1d4d0;
+    color:#9b6b43;
+    border:2px solid #a77c54;
+}
+.smallimg{ 
+    width:30%;
+    max-width:500px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#img1-home{
+    margin: 20px 0;
+    background-image: url('Image/dylan-brown-l6_IvBkIAtU-unsplash.jpg');/*Brown, D., 2020. [image] Available at: <https://unsplash.com/photos/l6_IvBkIAtU> [Accessed 25 June 2020].*/
+    background-position: center left;
+    border-radius: 50%;
+    position: relative;
+}  
+.blank{
+    width:30%;
+}
+#home_container_2{
+    justify-content: space-between;
+    margin:0;
+} 
+#img2-home{
+    background-image: url('Image/kitera-dent-gbNuQfm9hTE-unsplash.jpeg');/*Dent, K., 2020. A cappuccino on a saucer with a spoon at a local coffee shop.. [image] Available at: <https://unsplash.com/photos/gbNuQfm9hTE> [Accessed 25 June 2021].*/
+    background-position: center bottom;
+    order:1;
+    border-radius:0;
+}
+#content-home2{
+    width:40%;
+    max-width:600px ;
+    min-width: 300px;
+    background-color: #D1D4D0;
+    order:2;
+    overflow: hidden;
+    color:#9b6b43;
+}
+
+.home-link2 a{
+    color:#9b6b43;
+    border: 2px solid #a77c54;
+    margin-bottom: 10px;
+}
+.home-link2 a:hover{
+    background-color:#a77c54;
+    color:#f7f4f2;
+}
+.not2{
+    background-color: #A77C54;
+}
+#img3-home{
+    background-image: url('Image/caleb-lucas-qu-OfSfBr3Y-unsplash.jpeg');/*Lucas, C., 2018. [image] Available at: <https://unsplash.com/photos/qu-OfSfBr3Y> [Accessed 25 June 2021].*/
+    background-position: center bottom;
+    order:3;
+    border-radius: 0;
+}
+aside{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:40px;
+    margin-top:60px;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: #D3B69C;
+}
+.quote{
+    align-self:center;
+    color:#544434;
+}
+.quote h1{
+    font-family:'Barlow Condensed', sans-serif;
+    font-size:40px;
+    
+}
+.quote p{
+    font-family:'Lato', serif;
+    font-size:15px;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    background-color: #D1D4D0;
+    border-top:10px solid #A77C54;
+}
+.footer_info{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    gap:30px;
+    width:fit-content;
+    padding:60px;
+    margin-bottom:0%;
+    text-align: center;
+} 
+.footer_info a{transition: 0.3s;}
+.footer_info a:hover{color:#fff;}
+
+footer p{
+    font-family:'Abel', sans-serif;
+    text-align: center;
+    background-color: #544434;
+    padding:20px;
+    margin:0px;
+    color:#D3B69C;
+    font-size: 15px;
+}
+
+/*About us Page*/
+.grid-container-abus{
+    margin:60px auto 60px auto;
+    display:grid;
+    width:55%;
+    min-width: 300px;
+    height:500px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#Aboutus_intro{
+    background-color:#a77c54;
+    border-radius:20px 0px 0px 20px;
+    
+}
+#Aboutus_paragraph{
+    color:#F5F5DC;
+    font-style: italic;
+}
+#Aboutus_paragraph p{
+    padding-top:20px;
+}
+#Aboutus_signature{
+    margin-top:0px;
+    padding-top:0px;
+}
+.item{
+    margin:30px 15px 0px 30px;
+    text-align:left;
+}
+#img9-Aboutus{
+    background-image:url('Image/nathan-dumlao-N3btvQ51dL0-unsplash.jpeg');/*Dumlao, N., 2018. [image] Available at: <https://unsplash.com/photos/N3btvQ51dL0> [Accessed 25 June 2021].*/
+    background-size: cover;
+    border-radius: 0px 20px 20px 0px;
+}
+/*Reservation Page*/
+#thirdimg{
+    background: linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)), url('Image/Table_Img.jpeg');/*Olichon, A., 2019. [image] Available at: <https://unsplash.com/photos/8Sf82TNA-tI> [Accessed 25 June 2021].*/
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+.flex_reservation{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-100px;
+}
+#cafe-map{
+    background-image: url('Image/map.png');
+    background-size:100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:50%;
+    height:400px;
+    border-radius: 25px;   
+}
+.form_container{
+    margin-top:30px;
+    width:50%;
+    height:fit-content;
+    background-color:#a77c54;
+    border-radius:25px;
+    color:#f7f4f2
+}
+form{
+    width:100%;
+    padding:40px;
+    display:grid;
+    place-content: space-around;
+}
+input[type=text],input[type=tel],input[type=email], select{
+    width: 100%;;
+    height:35px;
+    border-radius:5px;
+    border:unset;
+    background:#e1e4e0;
+    overflow: scroll;
+}
+select{
+    width:20%;
+    margin-bottom:10px ;
+}
+input{
+    margin-bottom: 10px;
+}
+.form-size{
+    font-size:15px;
+}
+form hr{
+    border:1px solid #d1d4d0;
+    border-radius:20px;
+    width:100%;
+}
+form button{
+    place-self: center;
+    padding:15px;
+    margin:15px;
+    background-color: #b6a697;
+    width:150px;
+    border:2px solid #d1d4d0;
+    border-radius:25px;
+    color:#f7f4f2;
+    font-weight: bold;
+}
+form button:hover{
+    background-color:#f7f4f2;
+    color:#9b6b43;
+}
+#error{
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(243, 92, 54);
+    background-color:yellow;
+    border-radius:20px;
+    text-align: center;
+}
+/*About coffee Page*/
+.grid-container-coffee{
+    margin:60px 1vw 30px 1vw;
+    display: grid;
+    grid-template-rows: repeat(4, 400px);
+    grid-template-columns: 1fr 1fr;
+    row-gap:60px;
+    border-radius: 25px;
+}
+.grid-container-coffee p{
+    font-size:18px;
+}
+#coffee_selecting{
+    border-radius: 20px 0px 0px 20px;
+    background-color: #d1d4d0;
+    border: 5px solid #a77c54;
+    border-right:none;
+    overflow: hidden;
+    font-weight: bold;
+}
+#img5-coffee{
+    border-radius: 0px 20px 20px 0px;
+    border: 5px solid #a77c54;
+    border-left:none;
+    background-size:cover;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-image: url('Image/mariliz-lopez--4hu4CU1T_k-unsplash.jpg');/*López, M., 2020. [image] Available at: <https://unsplash.com/photos/-4hu4CU1T_k> [Accessed 25 June 2021].*/
+}
+#img6-coffee{
+    border-radius: 20px 0px 0px 20px;
+    border: 5px solid #d1d4d0;
+    border-right:none;
+    background-size:cover;
+    background-image: url('Image/tim-mossholder-YC6RVdoTtIk-unsplash.jpg');/*Mossholder, T., 2020. Coffee roasting at Café Kaawa. [image] Available at: <https://unsplash.com/photos/YC6RVdoTtIk> [Accessed 25 June 2021].*/
+    background-repeat: no-repeat;
+}
+#coffee_roasting{
+    background-color: #a77c54;
+    border-radius: 0px 20px 20px 0px;
+    border: 5px solid #d1d4d0;
+    border-left:none;
+    overflow:hidden;
+    font-weight: bold;
+}
+#coffee_brewing{
+    background-color: #d1d4d0;
+    border-radius: 20px 0px 0px 20px;
+    border: 5px solid #a77c54;
+    border-right: none;
+    overflow: hidden;
+    font-weight: bold;
+}
+#img7-coffee{
+    border-radius: 0px 20px 20px 0px;
+    border: 5px solid #a77c54;
+    border-left:none;
+    background-size:cover;
+    background-image: url('Image/brewing.jpeg');/*Nix, T., 2017. Coffee done the right way. [image] Available at: <https://unsplash.com/photos/ym51HT08PWw> [Accessed 25 June 2021].*/
+    background-repeat: no-repeat;
+}
+#img8-coffee{
+    border-radius: 20px 0px 0px 20px;
+    border: 5px solid #d1d4d0;
+    border-right:none;
+    background-size:cover;
+    background-image: url('Image/nathan-dumlao-wl5lJvJhkRM-unsplash.jpg');/*Dumlao, N., 2019. [image] Available at: <https://unsplash.com/photos/wl5lJvJhkRM> [Accessed 25 June 2021].*/
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+#coffee_drinking{
+    background-color: #a77c54;
+    border-radius: 0px 20px 20px 0px;
+    border: 5px solid #d1d4d0;
+    border-left: none;
+    border-collapse: collapse;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/*404 Page*/
+#go-wrong{
+    margin:8% 25% 8% 25%;
+    padding-bottom: 5vh;
+    text-align:center;
+    border: 2px solid #775b40;
+    border-radius: 20px;
+    background-color:#d1d4d0;
+}
+#go-wrong p{color:#9b6b43}
+#go-wrong a:hover{ color:red;background-color:yellow;}
+#go-wrong h1{font-size:35px; padding:15px}
+/*Phone screen*/
+@media screen and (max-width:954px) {
+    .header{
+        align-items:center; 
+        justify-content: center; 
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .brand{font-size:15px;margin:0px}
+    ul{margin-top:0px}
+    .header li{
+        font-size: 18px;
+        padding-bottom: 10px;
+        margin-top:10px;
+    }
+    article{
+        margin: 40px 0px 20px 0px;
+    }
+    aside{margin-bottom:30px;margin-top:30px;}
+    .quote h1{font-size:30px;}
+    .quote p{font-size:15px;}
+    /*Home Page*/
+    #firstimg-home{
+        width:100%;
+        height:400px;
+        background-size:300%;
+    }
+    .fontyeseva{font-size:35px;}
+    .fontasap{font-size:20px}
+    .home_blank{ display: none;}
+    .home_child{
+        border-radius: 0px;
+        border-left:none;
+        border-right:none;
+        height:400px;
+    }
+    .smallimg{min-width:100px;background-position:center;}
+    #content-home1{width:100%; border:none;}
+    #home_container_4{justify-content: space-between;}
+    #content-home2{ width:100%; order:1;max-width: none;}
+    #img1-home{ margin-bottom:30px;width:70%; height:30vh;}
+    #img2-home{width:47%;order:2;}
+    #img3-home{width:47%;}
+
+    /*About us Page*/
+    .grid-container-abus{
+        grid-template-columns: 100%;
+        
+    }
+    #intro{border-radius: 20px;}
+    /*About Coffee Page*/
+    .grid-container-coffee{grid-template-rows:500px 500px;}
+    #img5-coffee{display:none;}
+    #img6-coffee{display:none;}
+    #img7-coffee{display:none;}
+    #img8-coffee{display:none;}
+    #img9-Aboutus{display:none;}
+    #coffee_selecting{ overflow: scroll;}
+    #coffee_roasting{
+        overflow: scroll;}
+    #coffee_brewing{
+        overflow: scroll;}
+    #coffee_drinking{
+        overflow: scroll;}
+    /*404 Page*/
+    #go-wrong {
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius:0px;
+    }
+    /*Table reservation*/
+    .form_container {
+        width:80%;
+    }
+    form{
+        width:fit-content;
+    }
+    #cafe-map{
+        background-image: url('Image/map_2.png');
+        width: 80%;
+        height:100vh;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    .header ul li {margin-top:0;}
+}
+
+
+
+
